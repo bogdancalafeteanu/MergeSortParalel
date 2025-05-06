@@ -17,10 +17,10 @@ Programul funcționează în următorii pași:
 
 📌 Notă: versiunea actuală folosește MPI_Scatter, care poate pierde elemente dacă vectorul nu este divizibil exact. Pentru distribuție completă, se recomandă MPI_Scatterv.
 3. 🧮 Sortare locală (paralelă)
+    
+   Fiecare proces aplică mergeSort() asupra propriului subset de date.
 
-    Fiecare proces aplică mergeSort() asupra propriului subset de date.
-
-    Această parte este complet paralelă, fără comunicare între procese.
+   Această parte este complet paralelă, fără comunicare între procese.
 
 4. 🌲 Îmbinare paralelă (Merge Tree)
 
